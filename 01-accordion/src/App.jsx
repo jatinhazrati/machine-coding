@@ -1,9 +1,8 @@
-// import { accordionData } from "./accordionData";
-// import Accordion, {
-//   AccordionBody,
-//   AccordionItem,
-//   AccordionToggle,
-// } from "./components/CompoundAccordion/Accordion";
+import { accordionData } from "./accordionData";
+// import Accordion from "./components/CompoundAccordion/Accordion";
+// import AccordionBody from "./components/CompoundAccordion/AccordionBody";
+// import AccordionToggle from "./components/CompoundAccordion/AccordionToggle";
+// import AccordionItem from "./components/CompoundAccordion/AccordionItem";
 import Accordion from "./components/AtomicAccordion/Accordion";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
       {/* <Accordion collapsible={true}>
         {accordionData.map((item, index) => {
           return (
-            <AccordionItem id={index}>
+            <AccordionItem key={index} id={index}>
               <AccordionToggle>{item.header}</AccordionToggle>
               <AccordionBody>{item.body}</AccordionBody>
             </AccordionItem>
